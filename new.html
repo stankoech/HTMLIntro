@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href ="css/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" >
+			<div class ="container">
+				<div class ="navbar-header">
+					<button type ="button" class="navbar-toggle collapsed" data toggle = "collapse" data-target = "#navbar" aria-expanded="false" aria-controls ="navbar">
+						<span class ="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class ="navbar-brand" href ='/recipecategorylist'>to do</a>
+			
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class ="nav navbar-nav">
+					<li class ="active"><a href ='/recipecategorylist'>home</a>
+					<li class="dropdown">
+						<a href ="#" class="dropdown-toggle" data-toggle = "dropdown" role ="button" aria-haspopup ="true" aria-expanded ="false">RecipeList<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href ='/recipecategorylist'>Recipe List</a><li>
+						</ul>
+					</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href ="login.html">logout</li>
+					</ul>
+					</div>
+			</div>
+		</nav>
+	
+		<div class ="container">
+			<button type="button" class="btn btn-default btn-lg btn btn-primary" >
+				<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			</button>
+			<div class="row">
+			<h3 class = "text-warning bg-success text-center">To Do categories</h3>
+			<a href="addcategory.html" class="btn btn-info btn-sm pull-right"><i class="glyphicon glyphicon-plus"> Add</i></a>
+			
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr class="primary">
+							<th>ID</th>
+							<th>Name</th>
+							<th>edit</th>
+							<th>view</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="warning">
+							<td>1</td>
+							<td>Travel</td> 
+							<td><a href="addcategory.html"><input type="submit" value ="edit" class="btn btn-primary"></a></td>
+							<td><a href="traveltodoitems.html"><input type="submit" value ="view item" class="btn btn-warning"></a></td>
+						</tr>
+					</tbody>
+				</table>			
+			</div>
+		
+		</div>
+	</body>
+<html>
